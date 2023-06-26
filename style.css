@@ -1,11 +1,16 @@
 body {
     display: flex;
+    flex: 1;
+    justify-items: center;
     flex-direction: column;
+    
 }
 
 .header {
+    display: flex;
     flex: 1;
     background-color: aqua;
+    justify-content: flex-start;
 
 }
 
@@ -14,16 +19,52 @@ ul {
 }
 
 .intro {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
     background-color: blueviolet;
+
+    h1 {
+        justify-content: flex-start;
+    }
+
+    img {
+        flex: 1;
+        width: 200px;
+        justify-content: flex-end;
+    }
+
 }
 
 .imagearea {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     background-color: darkkhaki;
+    width: 800px;
+}
+
+
+.fourtext {
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
 }
 
 .fourimages {
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    margin-left: 10px;
     background-color: pink;
-    border: 10px;
-    border-color: aquamarine;
+
+}
+
+.oneoffour {
+    border: 6px solid white;
     border-radius: 20px;
 }
