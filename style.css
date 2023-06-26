@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 1;
+    background-color: aqua;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.intro {
+    background-color: blueviolet;
+}
+
+.imagearea {
+    background-color: darkkhaki;
+}
+
+.fourimages {
+    background-color: pink;
+    border: 10px;
+    border-color: aquamarine;
+    border-radius: 20px;
+}
