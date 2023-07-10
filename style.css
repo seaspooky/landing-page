@@ -1,47 +1,95 @@
 body {
     display: flex;
     flex: 1;
-    justify-items: center;
+    align-items: center;
     flex-direction: column;
-    
+    background-color: #1f2937;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.header {
+.headeritems {
     display: flex;
     flex: 1;
-    background-color: aqua;
-    justify-content: flex-start;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    width: 800px;
+    justify-content: space-between;
+}
 
+.logo {
+    display: flex;
+    font-size: 24px;
+    align-self: center;
+}
+
+.toplinks {
+    display: flex;
+    align-self: center;
 }
 
 ul {
     list-style-type: none;
 }
 
+li {
+    padding-left: 10px;
+}
+
 .intro {
     display: flex;
     flex: 1;
-    flex-flow: column;
-    background-color: blueviolet;
+    flex-flow: row;
+    background-color: #1f2937;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0 auto;
+}
 
-    h1 {
-        justify-content: flex-start;
-    }
+.introcontent {
+    justify-self: flex-start;
+    width: 400px;
+    padding: 20px;
+    padding-left: 0px;
+}
 
-    img {
-        flex: 1;
-        width: 200px;
-        justify-content: flex-end;
-    }
+.introcontent h1 {
+    color: #F9FAF8;
+}
 
+.introcontent p {
+    color: #E5E7EB;
+}
+
+.introimage {
+    width: 300px;
+    justify-self: flex-end;
 }
 
 .imagearea {
     display: flex;
     flex: 1;
     flex-direction: column;
-    background-color: darkkhaki;
-    width: 800px;
+    background-color: #F9FAF8;
+    align-content: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*.imagecolor {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 100%;
+    background-color: blue;
+    width: 100%;
+}*/
+
+.imageshead {
+    flex: 1;
+    align-self: center;
 }
 
 
@@ -49,7 +97,9 @@ ul {
     display: flex;
     flex: auto;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 800px;
+    align-self: center;
 
 }
 
@@ -57,14 +107,125 @@ ul {
     display: flex;
     flex: auto;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-right: 10px;
     margin-left: 10px;
-    background-color: pink;
+    background-color: #F9FAF8;
+    width: 800px;
+    align-self: center;
 
 }
 
 .oneoffour {
+    border: 6px solid #3882F6;
+    border-radius: 20px;
+    
+}
+
+.introitems {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.quotebg {
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+    width: 100%;
+}
+
+.quote {
+    display: flex;
+    width: 800px;
+    height: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #E5E7EB;
+}
+
+.quote h3 {
+    font-style: italic;    
+    color: #1f2937; 
+    font-weight: light;
+    font-size: 36px;
+    padding: 25px;
+}
+
+.quote h4 {
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: 25px;
+}
+
+.callactionblock {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.callaction {
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    background-color: #3882f6;
+    width: 800px;
+    height: 110px;
     border: 6px solid white;
     border-radius: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.callone {
+    flex: 0 0 300px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-top: 15px;
+    margin-bottom: -10px;
+}
+
+.calltwo {
+    flex: 0 0 550px;
+    text-wrap: nowrap;
+    color: white;
+    justify-content: flex-start;
+    padding-left: 50px;
+    width: 75%;
+    margin-top: -8px;
+}
+
+
+button {
+    color:  white;
+    font-weight: bold;
+    background-color: #3882F6;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+}
+
+.introcontent button {
+    border: none;
+}
+
+.callaction button {
+
+    margin-bottom: 50px;
+}
+
+.footer {
+    color: white;
+    padding: 10px;
 }
